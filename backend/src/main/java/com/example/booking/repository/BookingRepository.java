@@ -26,6 +26,7 @@ public interface BookingRepository extends MongoRepository<Booking, String> {
 //     List<BookingCount> countBookingsByRoomType();
 
 // @Aggregation(pipeline = {
+//      "{ '$match': { 'roomDetails.roomType': 'DELUXE', 'roomsBooked': { '$gt': 2 } } }",
 //     "{ '$group': { '_id': { 'roomType': '$roomType', 'checkInDate': '$checkInDate' }, 'count': { '$sum': 1 } } }",
 //     "{ '$project': { '_id': 0, 'roomType': '$_id.roomType', 'checkInDate': '$_id.checkInDate', 'count': 1 } }",
 //     "{ '$sort': { 'roomType': 1, 'checkInDate': 1 } }"
