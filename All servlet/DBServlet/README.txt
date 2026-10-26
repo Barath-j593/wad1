@@ -7,6 +7,9 @@ Contents:
 - WEB-INF/lib/ (put your MySQL Connector/J JAR here)
 
 1. Create the database and table in MySQL:
+Mysql connectivity
+Type mysql -u root -p -h127.0.0.1
+Password: ssn1
 
    CREATE DATABASE student;
    USE student;
