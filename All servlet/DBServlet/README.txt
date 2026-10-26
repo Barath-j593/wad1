@@ -6,6 +6,9 @@ Contents:
 - WEB-INF/classes/ (put DatabaseServlet.class here after compilation)
 - WEB-INF/lib/ (put your MySQL Connector/J JAR here)
 
+String to integer
+int age = Integer.parseInt(request.getParameter("age"));
+
 1. Create the database and table in MySQL:
 Mysql connectivity
 Type mysql -u root -p -h127.0.0.1
